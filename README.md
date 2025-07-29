@@ -195,25 +195,6 @@ Build, secure, and deploy a full-stack app:
 
 ---
 
-## 🛠 Requirements
-
-- Basic terminal usage
-- Docker installed (Desktop or CLI)
-- Git for source control
-- [Optional] Code editor like VS Code
-
----
-
-## 📬 Stay Connected
-
-⭐ Star this repo to keep track of updates  
-🐞 Found an issue? Open an [issue](https://github.com/YOUR_USERNAME/docker-zero-to-hero/issues)  
-🚀 Want to contribute? Pull requests welcome!
-
----
-
 ## 📄 License
 
-This course and repository are licensed under the [MIT License](LICENSE).
-
----
+This course and repository are licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
