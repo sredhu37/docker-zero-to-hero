@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Course Highlights
+## Course Highlights
 
 - **No prior Docker experience needed**
 - Hands-on labs and projects in every module
@@ -14,28 +14,25 @@
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
-1. [🧱 Module 1: Docker Fundamentals](#-module-1-docker-fundamentals)
-2. [📦 Module 2: Building and Managing Images](#-module-2-building-and-managing-images)
-3. [🕸️ Module 3: Docker Networking Deep Dive](#️-module-3-docker-networking-deep-dive)
-4. [🗃️ Module 4: Volumes and Persistent Data](#️-module-4-volumes-and-persistent-data)
-5. [🛠️ Module 5: Docker Compose - Real App Orchestration](#️-module-5-docker-compose---real-app-orchestration)
-6. [🔐 Module 6: Security & Best Practices](#-module-6-security--best-practices)
-7. [🔍 Module 7: Debugging, Logging & Monitoring](#-module-7-debugging-logging--monitoring)
-8. [📤 Module 8: Docker Registry & Image Management](#-module-8-docker-registry--image-management)
-9. [⚙️ Module 9: CI/CD & Docker in DevOps Workflows](#️-module-9-cicd--docker-in-devops-workflows)
-10. [📈 Bonus Module: Docker in Production](#-bonus-module-docker-in-production)
-11. [🎓 Final Capstone Project](#-final-capstone-project)
-12. [📎 Bonus Materials](#-bonus-materials)
-13. [🔚 Wrap-up](#-wrap-up)
+1. [Module 1: Docker Fundamentals](#-module-1-docker-fundamentals)
+2. [Module 2: Building and Managing Images](#-module-2-building-and-managing-images)
+3. [Module 3: Docker Networking Deep Dive](#️-module-3-docker-networking-deep-dive)
+4. [Module 4: Volumes and Persistent Data](#️-module-4-volumes-and-persistent-data)
+5. [Module 5: Docker Compose - Real App Orchestration](#️-module-5-docker-compose---real-app-orchestration)
+6. [Module 6: Security & Best Practices](#-module-6-security--best-practices)
+7. [Module 7: Debugging, Logging & Monitoring](#-module-7-debugging-logging--monitoring)
+8. [Module 8: Docker Registry & Image Management](#-module-8-docker-registry--image-management)
+9. [Module 9: CI/CD & Docker in DevOps Workflows](#️-module-9-cicd--docker-in-devops-workflows)
+10. [Bonus Module: Docker in Production](#-bonus-module-docker-in-production)
+11. [Final Capstone Project](#-final-capstone-project)
+12. [Bonus Materials](#-bonus-materials)
+13. [Wrap-up](#-wrap-up)
 
 ---
 
-## 🧱 Module 1: Docker Fundamentals
-
-✅ Designed for complete beginners  
-✅ Hands-on labs and CLI usage
+## Module 1: Docker Fundamentals
 
 - What is Docker? Why Docker?
 - Containers vs Virtual Machines
@@ -49,7 +46,7 @@
 
 ---
 
-## 📦 Module 2: Building and Managing Images
+## Module 2: Building and Managing Images
 
 - Anatomy of a Dockerfile
 - Build Context and Layers
@@ -64,7 +61,7 @@
 
 ---
 
-## 🕸️ Module 3: Docker Networking Deep Dive
+## Module 3: Docker Networking Deep Dive
 
 - Networking Modes: Bridge, Host, Overlay, None
 - Port Mapping & Exposing
@@ -89,7 +86,7 @@
 
 ---
 
-## 🛠️ Module 5: Docker Compose - Real App Orchestration
+## Module 5: Docker Compose - Real App Orchestration
 
 - Why Compose?
 - `docker-compose.yml` Syntax & Best Practices
@@ -127,7 +124,7 @@
 
 ---
 
-## 📤 Module 8: Docker Registry & Image Management
+## Module 8: Docker Registry & Image Management
 
 - DockerHub vs Private Registries
 - Tagging, Pushing, Pulling Images
@@ -140,18 +137,18 @@
 
 ---
 
-## ⚙️ Module 9: CI/CD & Docker in DevOps Workflows
+## Module 9: CI/CD & Docker in DevOps Workflows
 
 - Docker in GitHub Actions / GitLab CI / Jenkins
 - Automate Build, Test, Push
 - Staging Deployments with Compose
 - Intro to Docker + Kubernetes
 
-**📁 Project:** Build CI/CD pipeline to push to DockerHub
+**Project:** Build CI/CD pipeline to push to DockerHub
 
 ---
 
-## 📈 Bonus Module: Docker in Production
+## Bonus Module: Docker in Production
 
 - Image Slimming & Optimization
 - Production-Ready Dockerfiles
@@ -187,7 +184,7 @@ Build, secure, and deploy a full-stack app:
 
 ---
 
-## 🔚 Wrap-up
+## Wrap-up
 
 - Summary of Docker Skills You’ve Gained
 - Advanced Learning Paths: Docker Swarm, Kubernetes
