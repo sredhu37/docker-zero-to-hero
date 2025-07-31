@@ -1,0 +1,24 @@
+# Base image to start from.
+FROM node:24.4.1@sha256:c7a63f857d6dc9b3780ceb1874544cc22f3e399333c82de2a46de0049e841729
+
+# Set the working directory inside the container.
+WORKDIR /app
+
+# Copy only package.json and package-lock.json first.
+# This allows us to cache the npm install layer.
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Now copy the rest of the files.
+COPY . .
+
+# Build the application for production
+RUN npm run build
+
+# Document the port that the application will run on
+EXPOSE 3000
+
+# Start the application
+CMD ["npm", "start"]
