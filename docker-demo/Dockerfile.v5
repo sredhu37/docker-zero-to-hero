@@ -2,6 +2,10 @@
 # Stage 1 — Build the app
 FROM node:24.4.1@sha256:c7a63f857d6dc9b3780ceb1874544cc22f3e399333c82de2a46de0049e841729 AS builder
 
+# 1. Set env vars for production build
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
 # Set the working directory inside the container.
 WORKDIR /app
 
@@ -18,14 +22,19 @@ COPY . .
 # Build the application for production
 RUN npm run build
 
+
 # Stage 2 — Run the app
 FROM node:24.4.1@sha256:c7a63f857d6dc9b3780ceb1874544cc22f3e399333c82de2a46de0049e841729 AS final
 
+# 2. Set env vars for production build
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
 WORKDIR /app
 
-# 2. Copy the standalone folder
+# 3. Copy the standalone folder
 COPY --from=builder /app/.next/standalone ./
-# 3. Public assets and static files are not included by default, so we copy them manually
+# 4. Public assets and static files are not included by default, so we copy them manually
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/static ./.next/static
 
@@ -34,5 +43,5 @@ COPY --from=builder /app/.next/static ./.next/static
 # Document the port that the application will run on
 EXPOSE 3000
 
-# 4. Start the application
+# 5. Start the application
 CMD ["node", "server.js"]
