@@ -12,3 +12,6 @@ RUN npm run build
 EXPOSE 3000
 
 CMD ["npm", "start"]
+
+# docker build --file Dockerfile.v2 --tag docker-demo:v2 .
+# docker run -it --rm --publish 3000:3000 docker-demo:v2

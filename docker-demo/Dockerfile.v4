@@ -25,3 +25,6 @@ COPY --from=builder /app/public ./public
 EXPOSE 3000
 
 CMD ["npm", "start"]
+
+# docker build --file Dockerfile.v4 --tag docker-demo:v4 .
+# docker run -it --rm --publish 3000:3000 docker-demo:v4

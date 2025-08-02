@@ -37,3 +37,6 @@ USER node
 EXPOSE 3000
 
 CMD ["node", "server.js"]
+
+# docker build --file Dockerfile.v9-slim --tag docker-demo:v9-slim .
+# docker run -it --rm --publish 3000:3000 docker-demo:v9-slim

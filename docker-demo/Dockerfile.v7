@@ -36,3 +36,6 @@ COPY --from=builder /app/.next/static ./.next/static
 EXPOSE 3000
 
 CMD ["node", "server.js"]
+
+# docker build --file Dockerfile.v7 --tag docker-demo:v7 .
+# docker run -it --rm --publish 3000:3000 docker-demo:v7

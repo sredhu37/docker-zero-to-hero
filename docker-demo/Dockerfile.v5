@@ -31,3 +31,6 @@ EXPOSE 3000
 
 # Start the application
 CMD ["node", "server.js"]
+
+# docker build --file Dockerfile.v5 --tag docker-demo:v5 .
+# docker run -it --rm --publish 3000:3000 docker-demo:v5

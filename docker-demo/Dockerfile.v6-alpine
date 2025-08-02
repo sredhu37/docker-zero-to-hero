@@ -28,3 +28,6 @@ COPY --from=builder /app/.next/static ./.next/static
 EXPOSE 3000
 
 CMD ["node", "server.js"]
+
+# docker build --file Dockerfile.v6-alpine --tag docker-demo:v6-alpine .
+# docker run -it --rm --publish 3000:3000 docker-demo:v6-alpine

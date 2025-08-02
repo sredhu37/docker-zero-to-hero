@@ -1,6 +1,6 @@
 ARG BUILDER_IMAGE=node:24.4.1@sha256:c7a63f857d6dc9b3780ceb1874544cc22f3e399333c82de2a46de0049e841729
 # Using distroless NONROOT image for production
-ARG FINAL_IMAGE=gcr.io/distroless/nodejs24-debian12:nonroot
+ARG FINAL_IMAGE=gcr.io/distroless/nodejs24-debian12:debug-nonroot
 
 FROM ${BUILDER_IMAGE} AS builder
 
@@ -34,5 +34,5 @@ EXPOSE 3000
 # Entrypoint is `node`; Check with `docker inspect gcr.io/distroless/nodejs24-debian12`
 CMD ["server.js"]
 
-# docker build --file Dockerfile.v9-distroless --tag docker-demo:v9-distroless .
-# docker run -it --rm --publish 3000:3000 docker-demo:v9-distroless
+# docker build --file Dockerfile.v9-distroless-debug --tag docker-demo:v9-distroless-debug .
+# docker run -it --rm --publish 3000:3000 --init --entrypoint=sh docker-demo:v9-distroless-debug

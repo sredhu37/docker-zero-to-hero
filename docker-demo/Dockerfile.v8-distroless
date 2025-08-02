@@ -33,3 +33,6 @@ EXPOSE 3000
 
 # Entrypoint is `node`; Check with `docker inspect gcr.io/distroless/nodejs24-debian12`
 CMD ["server.js"]
+
+# docker build --file Dockerfile.v8-distroless --tag docker-demo:v8-distroless .
+# docker run -it --rm --publish 3000:3000 docker-demo:v8-distroless
