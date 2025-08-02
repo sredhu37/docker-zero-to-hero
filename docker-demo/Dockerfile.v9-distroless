@@ -1,6 +1,6 @@
 ARG BUILDER_IMAGE=node:24.4.1@sha256:c7a63f857d6dc9b3780ceb1874544cc22f3e399333c82de2a46de0049e841729
-# Using distroless image to reduce the size of the container
-ARG FINAL_IMAGE=gcr.io/distroless/nodejs24-debian12
+# Using distroless NONROOT image for production
+ARG FINAL_IMAGE=gcr.io/distroless/nodejs24-debian12:nonroot
 
 FROM ${BUILDER_IMAGE} AS builder
 
@@ -28,8 +28,6 @@ WORKDIR /app
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/static ./.next/static
-
-USER 1000
 
 EXPOSE 3000
 
